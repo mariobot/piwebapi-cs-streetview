@@ -1,12 +1,8 @@
 ﻿using Newtonsoft.Json.Linq;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace piwebapi_cs_streetview
@@ -21,8 +17,10 @@ namespace piwebapi_cs_streetview
 
         public Form1()
         {
-            InitializeComponent();
-            client = new PIWebAPIClient("mabotero", "Lenovo2018");
+            InitializeComponent();            
+            client = new PIWebAPIClient("mabotero", Encoding.UTF8.GetString(new byte[] { 76, 101, 110, 111, 118, 111, 50, 48, 49, 56 }));
+            prevBtn.Enabled = false;
+            nextBtn.Enabled = false;
             currentEventCount = 0;
             GetEventFrames();            
         }        
@@ -92,6 +90,7 @@ namespace piwebapi_cs_streetview
                 // Display the first image
                 currentEventCount = 0;
                 StreetViewQuery();
+                ButtonCheck();
 
                 // Populate Start and End
                 startTimeLbl.Text = svEvent.StartTime.ToLocalTime().ToString();
@@ -132,9 +131,35 @@ namespace piwebapi_cs_streetview
 
             webBrowser1.Navigate(sb.ToString());
 
-            imageLbl.Text = string.Format("{0} or {1}", currentEventCount + 1, svEvent.Timestamps.Count());
+            imageLbl.Text = string.Format("{0} of {1}", currentEventCount + 1, svEvent.Timestamps.Count());
             timeLbl.Text = svEvent.Timestamps[currentEventCount].ToLocalTime().ToString();
 
+        }
+
+        private void ButtonCheck() {
+            int totalCount = svEvent.Timestamps.Count();
+            prevBtn.Enabled = (currentEventCount == 0) ? false : true;
+            nextBtn.Enabled = (totalCount - currentEventCount == 1) ? false : true;
+        }
+
+        private void nextBtn_Click(object sender, EventArgs e)
+        {
+            if ((svEvent != null) && (svEvent.Timestamps.Count() - currentEventCount > 1))
+            {
+                currentEventCount += 1;
+                StreetViewQuery();
+            }
+            ButtonCheck();
+        }
+
+        private void prevBtn_Click(object sender, EventArgs e)
+        {
+            if ((svEvent != null) && (currentEventCount > 0))
+            {
+                currentEventCount -= 1;
+                StreetViewQuery();
+            }
+            ButtonCheck();
         }
     }
 }

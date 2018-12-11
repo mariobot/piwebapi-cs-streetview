@@ -1,0 +1,14 @@
+C:\Users\mabotero\source\repos\piwebapi-cs-streetview\piwebapi-cs-streetview\bin\Debug\piwebapi-cs-streetview.exe.config
+C:\Users\mabotero\source\repos\piwebapi-cs-streetview\piwebapi-cs-streetview\bin\Debug\piwebapi-cs-streetview.exe
+C:\Users\mabotero\source\repos\piwebapi-cs-streetview\piwebapi-cs-streetview\bin\Debug\piwebapi-cs-streetview.pdb
+C:\Users\mabotero\source\repos\piwebapi-cs-streetview\piwebapi-cs-streetview\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mabotero\source\repos\piwebapi-cs-streetview\piwebapi-cs-streetview\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\mabotero\source\repos\piwebapi-cs-streetview\piwebapi-cs-streetview\bin\Debug\Newtonsoft.Json.xml
+C:\Users\mabotero\source\repos\piwebapi-cs-streetview\piwebapi-cs-streetview\obj\Debug\piwebapi-cs-streetview.csprojAssemblyReference.cache
+C:\Users\mabotero\source\repos\piwebapi-cs-streetview\piwebapi-cs-streetview\obj\Debug\piwebapi_cs_streetview.Form1.resources
+C:\Users\mabotero\source\repos\piwebapi-cs-streetview\piwebapi-cs-streetview\obj\Debug\piwebapi_cs_streetview.Properties.Resources.resources
+C:\Users\mabotero\source\repos\piwebapi-cs-streetview\piwebapi-cs-streetview\obj\Debug\piwebapi-cs-streetview.csproj.GenerateResource.cache
+C:\Users\mabotero\source\repos\piwebapi-cs-streetview\piwebapi-cs-streetview\obj\Debug\piwebapi-cs-streetview.csproj.CoreCompileInputs.cache
+C:\Users\mabotero\source\repos\piwebapi-cs-streetview\piwebapi-cs-streetview\obj\Debug\piwebapi-cs-streetview.csproj.CopyComplete
+C:\Users\mabotero\source\repos\piwebapi-cs-streetview\piwebapi-cs-streetview\obj\Debug\piwebapi-cs-streetview.exe
+C:\Users\mabotero\source\repos\piwebapi-cs-streetview\piwebapi-cs-streetview\obj\Debug\piwebapi-cs-streetview.pdb

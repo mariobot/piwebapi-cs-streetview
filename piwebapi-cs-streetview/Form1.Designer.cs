@@ -30,29 +30,29 @@
         {
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.startTimeLbl = new System.Windows.Forms.Label();
-            this.endTimeLbl = new System.Windows.Forms.Label();
-            this.imageLbl = new System.Windows.Forms.Label();
-            this.timeLbl = new System.Windows.Forms.Label();
-            this.searchTb = new System.Windows.Forms.TextBox();
-            this.SearchBtn = new System.Windows.Forms.Button();
-            this.eventFrameCb = new System.Windows.Forms.ComboBox();
-            this.prevBtn = new System.Windows.Forms.Button();
             this.nextBtn = new System.Windows.Forms.Button();
+            this.prevBtn = new System.Windows.Forms.Button();
+            this.eventFrameCb = new System.Windows.Forms.ComboBox();
+            this.timeLbl = new System.Windows.Forms.Label();
+            this.imageLbl = new System.Windows.Forms.Label();
+            this.endTimeLbl = new System.Windows.Forms.Label();
+            this.startTimeLbl = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.SearchBtn = new System.Windows.Forms.Button();
+            this.searchTb = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitter1
@@ -81,18 +81,6 @@
             this.splitContainer1.SplitterDistance = 265;
             this.splitContainer1.TabIndex = 1;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.SearchBtn);
-            this.groupBox1.Controls.Add(this.searchTb);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(6, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(256, 135);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Search for new location";
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.nextBtn);
@@ -113,41 +101,64 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Get Recorded Sessions";
             // 
-            // label1
+            // nextBtn
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Location";
+            this.nextBtn.Location = new System.Drawing.Point(140, 59);
+            this.nextBtn.Name = "nextBtn";
+            this.nextBtn.Size = new System.Drawing.Size(107, 23);
+            this.nextBtn.TabIndex = 10;
+            this.nextBtn.Text = "Next";
+            this.nextBtn.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // prevBtn
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 109);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Start Time:";
+            this.prevBtn.Location = new System.Drawing.Point(7, 59);
+            this.prevBtn.Name = "prevBtn";
+            this.prevBtn.Size = new System.Drawing.Size(110, 23);
+            this.prevBtn.TabIndex = 9;
+            this.prevBtn.Text = "Previous";
+            this.prevBtn.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // eventFrameCb
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 143);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 13);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "End Time:";
+            this.eventFrameCb.FormattingEnabled = true;
+            this.eventFrameCb.Location = new System.Drawing.Point(7, 20);
+            this.eventFrameCb.Name = "eventFrameCb";
+            this.eventFrameCb.Size = new System.Drawing.Size(240, 21);
+            this.eventFrameCb.TabIndex = 8;
+            this.eventFrameCb.SelectedIndexChanged += new System.EventHandler(this.eventFrameCb_SelectedIndexChanged);
             // 
-            // label4
+            // timeLbl
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(10, 177);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 13);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Image: ";
+            this.timeLbl.AutoSize = true;
+            this.timeLbl.Location = new System.Drawing.Point(120, 208);
+            this.timeLbl.Name = "timeLbl";
+            this.timeLbl.Size = new System.Drawing.Size(0, 13);
+            this.timeLbl.TabIndex = 7;
+            // 
+            // imageLbl
+            // 
+            this.imageLbl.AutoSize = true;
+            this.imageLbl.Location = new System.Drawing.Point(120, 176);
+            this.imageLbl.Name = "imageLbl";
+            this.imageLbl.Size = new System.Drawing.Size(0, 13);
+            this.imageLbl.TabIndex = 6;
+            // 
+            // endTimeLbl
+            // 
+            this.endTimeLbl.AutoSize = true;
+            this.endTimeLbl.Location = new System.Drawing.Point(120, 143);
+            this.endTimeLbl.Name = "endTimeLbl";
+            this.endTimeLbl.Size = new System.Drawing.Size(0, 13);
+            this.endTimeLbl.TabIndex = 5;
+            // 
+            // startTimeLbl
+            // 
+            this.startTimeLbl.AutoSize = true;
+            this.startTimeLbl.Location = new System.Drawing.Point(117, 108);
+            this.startTimeLbl.Name = "startTimeLbl";
+            this.startTimeLbl.Size = new System.Drawing.Size(0, 13);
+            this.startTimeLbl.TabIndex = 4;
             // 
             // label5
             // 
@@ -158,44 +169,44 @@
             this.label5.TabIndex = 3;
             this.label5.Text = "Time";
             // 
-            // startTimeLbl
+            // label4
             // 
-            this.startTimeLbl.AutoSize = true;
-            this.startTimeLbl.Location = new System.Drawing.Point(117, 108);
-            this.startTimeLbl.Name = "startTimeLbl";
-            this.startTimeLbl.Size = new System.Drawing.Size(0, 13);
-            this.startTimeLbl.TabIndex = 4;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(10, 177);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(42, 13);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Image: ";
             // 
-            // endTimeLbl
+            // label3
             // 
-            this.endTimeLbl.AutoSize = true;
-            this.endTimeLbl.Location = new System.Drawing.Point(120, 143);
-            this.endTimeLbl.Name = "endTimeLbl";
-            this.endTimeLbl.Size = new System.Drawing.Size(0, 13);
-            this.endTimeLbl.TabIndex = 5;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(7, 143);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(55, 13);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "End Time:";
             // 
-            // imageLbl
+            // label2
             // 
-            this.imageLbl.AutoSize = true;
-            this.imageLbl.Location = new System.Drawing.Point(120, 176);
-            this.imageLbl.Name = "imageLbl";
-            this.imageLbl.Size = new System.Drawing.Size(0, 13);
-            this.imageLbl.TabIndex = 6;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(7, 109);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(58, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Start Time:";
             // 
-            // timeLbl
+            // groupBox1
             // 
-            this.timeLbl.AutoSize = true;
-            this.timeLbl.Location = new System.Drawing.Point(120, 208);
-            this.timeLbl.Name = "timeLbl";
-            this.timeLbl.Size = new System.Drawing.Size(0, 13);
-            this.timeLbl.TabIndex = 7;
-            // 
-            // searchTb
-            // 
-            this.searchTb.Location = new System.Drawing.Point(84, 20);
-            this.searchTb.Name = "searchTb";
-            this.searchTb.Size = new System.Drawing.Size(100, 20);
-            this.searchTb.TabIndex = 1;
+            this.groupBox1.Controls.Add(this.SearchBtn);
+            this.groupBox1.Controls.Add(this.searchTb);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Location = new System.Drawing.Point(6, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(256, 135);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Search for new location";
             // 
             // SearchBtn
             // 
@@ -207,31 +218,21 @@
             this.SearchBtn.UseVisualStyleBackColor = true;
             this.SearchBtn.Click += new System.EventHandler(this.SearchBtn_Click);
             // 
-            // eventFrameCb
+            // searchTb
             // 
-            this.eventFrameCb.FormattingEnabled = true;
-            this.eventFrameCb.Location = new System.Drawing.Point(7, 20);
-            this.eventFrameCb.Name = "eventFrameCb";
-            this.eventFrameCb.Size = new System.Drawing.Size(240, 21);
-            this.eventFrameCb.TabIndex = 8;
+            this.searchTb.Location = new System.Drawing.Point(84, 20);
+            this.searchTb.Name = "searchTb";
+            this.searchTb.Size = new System.Drawing.Size(100, 20);
+            this.searchTb.TabIndex = 1;
             // 
-            // prevBtn
+            // label1
             // 
-            this.prevBtn.Location = new System.Drawing.Point(7, 59);
-            this.prevBtn.Name = "prevBtn";
-            this.prevBtn.Size = new System.Drawing.Size(110, 23);
-            this.prevBtn.TabIndex = 9;
-            this.prevBtn.Text = "Previous";
-            this.prevBtn.UseVisualStyleBackColor = true;
-            // 
-            // nextBtn
-            // 
-            this.nextBtn.Location = new System.Drawing.Point(140, 59);
-            this.nextBtn.Name = "nextBtn";
-            this.nextBtn.Size = new System.Drawing.Size(107, 23);
-            this.nextBtn.TabIndex = 10;
-            this.nextBtn.Text = "Next";
-            this.nextBtn.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(48, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Location";
             // 
             // webBrowser1
             // 
@@ -255,10 +256,10 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
